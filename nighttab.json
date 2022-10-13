@@ -1,7 +1,8 @@
 {
 	"nightTab": true,
-	"version": "7.3.0",
+	"version": "7.5.0",
 	"state": {
+		"language": "system",
 		"layout": {
 			"area": {
 				"header": {
@@ -24,7 +25,10 @@
 			"scrollbar": "none",
 			"title": "Home",
 			"favicon": "https://upload.wikimedia.org/wikipedia/commons/0/0e/White_circle.png",
-			"overscroll": false
+			"overscroll": {
+				"active": false,
+				"unblur": false
+			}
 		},
 		"header": {
 			"item": {
@@ -120,7 +124,7 @@
 				"size": 100,
 				"newLine": false,
 				"newTab": true,
-				"string": "json"
+				"string": ""
 			},
 			"order": ["clock", "search", "toolbar"],
 			"edit": false
@@ -1183,9 +1187,9 @@
 						"text": ""
 					},
 					"icon": {
-						"name": "bitbucket",
-						"prefix": "fab",
-						"label": "Bitbucket"
+						"name": "code-branch",
+						"prefix": "fas",
+						"label": "Code Branch"
 					},
 					"image": {
 						"url": ""
@@ -2665,6 +2669,87 @@
 			}
 		},
 		"items": [{
+			"url": "http://localhost:3000",
+			"display": {
+				"alignment": "center-center",
+				"direction": "vertical",
+				"order": "visual-name",
+				"rotate": 0,
+				"translate": {
+					"x": 0,
+					"y": 0
+				},
+				"gutter": 25,
+				"name": {
+					"show": true,
+					"text": "Port 3000",
+					"size": 7
+				},
+				"visual": {
+					"show": true,
+					"type": "icon",
+					"size": 30,
+					"letter": {
+						"text": ":3000"
+					},
+					"icon": {
+						"name": "network-wired",
+						"prefix": "fas",
+						"label": "Wired Network"
+					},
+					"image": {
+						"url": ""
+					},
+					"shadow": {
+						"size": 0
+					}
+				}
+			},
+			"accent": {
+				"by": "theme",
+				"hsl": {
+					"h": 0,
+					"s": 0,
+					"l": 0
+				},
+				"rgb": {
+					"r": 0,
+					"g": 0,
+					"b": 0
+				}
+			},
+			"color": {
+				"by": "theme",
+				"hsl": {
+					"h": 0,
+					"s": 0,
+					"l": 0
+				},
+				"rgb": {
+					"r": 0,
+					"g": 0,
+					"b": 0
+				},
+				"opacity": 100
+			},
+			"background": {
+				"show": false,
+				"type": "image",
+				"opacity": 100,
+				"image": {
+					"url": ""
+				},
+				"video": {
+					"url": ""
+				}
+			},
+			"border": 0,
+			"shape": {
+				"wide": false,
+				"tall": false
+			},
+			"timestamp": 1643814793214
+		}, {
 			"url": "https://crontab.guru/",
 			"display": {
 				"alignment": "center-center",
@@ -2851,9 +2936,9 @@
 						"text": ""
 					},
 					"icon": {
-						"name": "code-branch",
-						"prefix": "fas",
-						"label": "Code Branch"
+						"name": "git-alt",
+						"prefix": "fab",
+						"label": "Git Alt"
 					},
 					"image": {
 						"url": ""
@@ -2907,87 +2992,6 @@
 				"tall": false
 			},
 			"timestamp": 1656412724256
-		}, {
-			"url": "http://localhost:3000",
-			"display": {
-				"alignment": "center-center",
-				"direction": "vertical",
-				"order": "visual-name",
-				"rotate": 0,
-				"translate": {
-					"x": 0,
-					"y": 0
-				},
-				"gutter": 25,
-				"name": {
-					"show": true,
-					"text": "Port 3000",
-					"size": 7
-				},
-				"visual": {
-					"show": true,
-					"type": "icon",
-					"size": 30,
-					"letter": {
-						"text": ":3000"
-					},
-					"icon": {
-						"name": "network-wired",
-						"prefix": "fas",
-						"label": "Wired Network"
-					},
-					"image": {
-						"url": ""
-					},
-					"shadow": {
-						"size": 0
-					}
-				}
-			},
-			"accent": {
-				"by": "theme",
-				"hsl": {
-					"h": 0,
-					"s": 0,
-					"l": 0
-				},
-				"rgb": {
-					"r": 0,
-					"g": 0,
-					"b": 0
-				}
-			},
-			"color": {
-				"by": "theme",
-				"hsl": {
-					"h": 0,
-					"s": 0,
-					"l": 0
-				},
-				"rgb": {
-					"r": 0,
-					"g": 0,
-					"b": 0
-				},
-				"opacity": 100
-			},
-			"background": {
-				"show": false,
-				"type": "image",
-				"opacity": 100,
-				"image": {
-					"url": ""
-				},
-				"video": {
-					"url": ""
-				}
-			},
-			"border": 0,
-			"shape": {
-				"wide": false,
-				"tall": false
-			},
-			"timestamp": 1643814793214
 		}, {
 			"url": "https://jsonlint.com/",
 			"display": {
@@ -3069,6 +3073,87 @@
 				"tall": false
 			},
 			"timestamp": 1656412641703
+		}, {
+			"url": "regex101.com",
+			"display": {
+				"alignment": "center-center",
+				"direction": "vertical",
+				"order": "visual-name",
+				"rotate": 0,
+				"translate": {
+					"x": 0,
+					"y": 0
+				},
+				"gutter": 25,
+				"name": {
+					"show": true,
+					"text": "RegEx Editor",
+					"size": 7
+				},
+				"visual": {
+					"show": true,
+					"type": "icon",
+					"size": 25,
+					"letter": {
+						"text": ""
+					},
+					"icon": {
+						"name": "quote-right",
+						"prefix": "fas",
+						"label": "quote-right"
+					},
+					"image": {
+						"url": ""
+					},
+					"shadow": {
+						"size": 0
+					}
+				}
+			},
+			"accent": {
+				"by": "theme",
+				"hsl": {
+					"h": 0,
+					"s": 0,
+					"l": 0
+				},
+				"rgb": {
+					"r": 0,
+					"g": 0,
+					"b": 0
+				}
+			},
+			"color": {
+				"by": "theme",
+				"hsl": {
+					"h": 0,
+					"s": 0,
+					"l": 0
+				},
+				"rgb": {
+					"r": 0,
+					"g": 0,
+					"b": 0
+				},
+				"opacity": 100
+			},
+			"background": {
+				"show": false,
+				"type": "image",
+				"opacity": 100,
+				"image": {
+					"url": ""
+				},
+				"video": {
+					"url": ""
+				}
+			},
+			"border": 0,
+			"shape": {
+				"wide": false,
+				"tall": false
+			},
+			"timestamp": 1665063588153
 		}]
 	}]
 }
